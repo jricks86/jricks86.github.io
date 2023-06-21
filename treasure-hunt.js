@@ -6,14 +6,17 @@ const treasure = (location) => {
  // check if the location clicked equates to the random treasure location
     if (location === boneLocation) {
          // change the innerHTML question mark to a treasure
-        document.getElementById(location).innerHTML = "🦴"
+        document.getElementById(location).innerHTML = "🦴";
+        document.getElementById(location).style.fontSize = "40px";
         alert("You found the bone, you lucky dog!")
              // check if the location clicked equates to the random police location
     } else if (location  === policeLocation) {
-        document.getElementById(location).innerHTML ="👮‍♂️"
+        document.getElementById(location).innerHTML ="👮‍♂️";
+        document.getElementById(location).style.fontSize = "40px";
         alert ("Oh no! You've been caught by the dog catcher!")
     } else {
-        document.getElementById(location).innerHTML = "🌳"
+        document.getElementById(location).innerHTML = "🌳";
+        document.getElementById(location).style.fontSize = "40px";
     }
 }
 
